@@ -1,0 +1,47 @@
+Input Format
+
+input consists of one Character.
+Constraints
+
+No Constraints
+
+Output Format
+
+print whether the character is Vowel or Consonant or Invalid Input.
+Sample Input 0
+
+A
+Sample Output 0
+
+The Character A is Vowel
+Sample Input 1
+
+a
+Sample Output 1
+
+The Character a is Vowel
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char ch=sc.next().charAt(0);
+        if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z')){
+            if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'
+            || ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+            {
+                 System.out.println("The Character "+ch+" is Vowel");
+            }
+            else {
+                
+                System.out.println("The Character "+ch+" is Consonant");
+            }
+           }
+        else
+            System.out.println("Invalid Input");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
